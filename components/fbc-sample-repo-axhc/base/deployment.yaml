@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: fbc-sample-repo-axhc
     spec:
       containers:
-      - image: fbc:latest
+      - image: quay.io/redhat-user-workloads/build-templates-e2e/test-app-514/fbc-sample-repo-axhc@sha256:20e67de7efcbf725c4c48f367e6266a5a97324b06bcef3bad814ecd5dcf43d2c
         name: fbc
         ports:
         - containerPort: 50051
