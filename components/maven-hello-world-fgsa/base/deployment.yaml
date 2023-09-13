@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: maven-hello-world-fgsa
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-user-workloads/build-templates-e2e/test-app-514/maven-hello-world-fgsa@sha256:8541691a62cea1a6626d8bd7ee204d484debb7fcf454715e62c051bd75d9f2dd
         name: my-java-quarkus
         ports:
         - containerPort: 8081
