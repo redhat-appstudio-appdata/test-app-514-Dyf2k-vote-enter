@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: nodejs-no-dockerfile-b8fx
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-no-dockerfile-b8fx
+    app.kubernetes.io/part-of: test-app-514
+  name: nodejs-no-dockerfile-b8fx
+spec:
+  ports:
+  - name: "8080"
+    port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: nodejs-no-dockerfile-b8fx
+status:
+  loadBalancer: {}
